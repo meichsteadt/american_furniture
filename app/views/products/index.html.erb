@@ -10,7 +10,7 @@
       </div>
 
       <% if @category != "youth" %>
-        <%= render "search_form" %>
+        <% render "search_form" %>
       <% end %>
 
       <% if @products.length > 0 %>
@@ -19,7 +19,7 @@
             <%= link_to(product_path(product)) do %>
               <div class="col-lg-4 product">
                 <div class="safe-zone">
-                  <div class="image" style="background: url(<%= product.image %>); background-size: cover; background-position: center center;"></div>
+                  <div class="image" style="background: url(<%= product.image %>);background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
                 </div>
                 <div class="info">
                   <p><%= product.name %></p>

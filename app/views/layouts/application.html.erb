@@ -6,8 +6,8 @@
     <%= favicon_link_tag(source='favicon.ico') %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <% stylesheet_link_tag 'casual', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag 'agency', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'casual', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <% stylesheet_link_tag 'agency', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Merriweather" rel="stylesheet">
@@ -17,8 +17,8 @@
   <body>
     <div class="page">
       <div class="logo">
-        <!-- <div class="brand"><%= link_to @store.name, '/' %></div> -->
-        <%= image_tag('logo.jpg', class: "img-responsive", id: "logo") %>
+        <div class="brand"><%= link_to @store.name, '/' %></div>
+        <!-- <%= image_tag('logo.jpg', class: "img-responsive", id: "logo") %> -->
         <div class="address-bar" id="address"><%= @store.address %> | <%= @store.phone %></div>
         <!-- Navigation -->
         <nav class="navbar navbar-default" role="navigation">
@@ -40,7 +40,7 @@
                 <li><%= link_to 'Dining', '/dining' %></li>
                 <li><%= link_to 'Living Room', '/seating' %></li>
                 <li><%= link_to 'Bedroom', '/bedroom' %></li>
-                <li><%= link_to 'Youth', '/youth' %></li>
+                <!-- <li><%= link_to 'Youth', '/youth' %></li> -->
                 <li><%= link_to 'Mattresses', mattresses_path %></li>
                 <li><%= link_to 'Contact', '/contact' %></li>
               </ul>

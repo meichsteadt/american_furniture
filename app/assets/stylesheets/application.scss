@@ -20,7 +20,7 @@
 $color1: rgba(255,255,255,1);
 $teal: #13ACB1;
 $purple: #543c5d;
-$teal: darken(red, 10%);
+// $teal: darken(red, 10%);
 $carouselHeight: 500px;
 
  html {
@@ -219,7 +219,8 @@ $carouselHeight: 500px;
 
      .navbar-default {
          border: none;
-         background: #fff;
+         background: rgba(255,255,255, 0.9);
+         //  background: #fff;
          margin-bottom: 0 !important;
      }
 
@@ -232,6 +233,7 @@ $carouselHeight: 500px;
        text-align: center;
        display: inline-block;
        float: none;
+       padding: 0 10px;
      }
 
      .nav>li>a {
@@ -428,8 +430,7 @@ $carouselHeight: 500px;
  .product {
    position: relative;
    margin-bottom: 20px;
-   max-height: 360px;
-   height: 360px;
+   height: 300px;
    overflow: hidden;
    box-sizing: border-box;
    .safe-zone {
@@ -448,9 +449,9 @@ $carouselHeight: 500px;
     background-color: rgba(255,255,255,0.8);
     width: 100%;
     padding: 0 10px;
-    position: absolute;
-    bottom: 0;
-    height: 60px;
+    position: relative;
+    bottom: 80px;
+    height: 80px;
     p {
       color: #333;
       font-size: 20px;
@@ -767,6 +768,8 @@ th {
   height: 200px;
   .info {
     text-align: center;
+    height: 50px;
+    bottom: 50px;
   }
 }
 
