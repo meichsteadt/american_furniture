@@ -9,30 +9,17 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <div class="col-xs-4 product-slide">
-          <img class="" src="<%= @slideshow[0] %>" alt="">
-        </div>
-        <div class="col-xs-4">
-          <div class="cover"></div>
-          <div class="promo">
-            <img src="http://www.mentalhealthamerica.net/sites/default/files/styles/interior_page_banner/public/BackToSchoolHeader.png?itok=ehkyBAet" alt="" style="padding: 10px;" class="img-responsive">
-            <h3>New year, <strong>New bedroom</strong></h3>
-            <%= link_to '/bedroom' do %>
-            <button class="promo-button">Shop Now</button>
-            <% end %>
-          </div>
-        </div>
-        <div class="col-xs-4 product-slide">
-          <img class="flip" src="<%= @slideshow[1] %>" alt="">
-        </div>
+        <%= link_to "/dining" do %>
+          <%= image_tag "holiday-savings.jpg" %>
+        <% end %>
       </div>
       <div class="item mattress-quiz">
-      <%= link_to mattresses_path do %>
-      <h2>Find your perfect mattress in minutes</h2>
-      <button class="promo-button">Shop Mattresses</button>
-      <img class="" src="https://www.goodbed.com/media/pictures/mattresses/serta/serta-picture-30.jpg" alt="">
-      <% end %>
-    </div>
+        <%= link_to mattresses_path do %>
+          <h2>Find your perfect mattress in minutes</h2>
+          <button class="promo-button">Shop Mattresses</button>
+          <img class="" src="https://www.goodbed.com/media/pictures/mattresses/serta/serta-picture-30.jpg" alt="">
+        <% end %>
+      </div>
   </div>
   <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
     <span class="icon-prev"></span>
@@ -108,20 +95,6 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <!-- Begin MailChimp Signup Form -->
-  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-  <div id="mc_embed_signup">
-    <form action="https://sofalovedesigns.us13.list-manage.com/subscribe/post?u=94545b07e7bf44c99407cb920&amp;id=2296d31216" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-    	    <label for="mce-EMAIL">Stay up to date on our promotions!</label>
-    	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_94545b07e7bf44c99407cb920_2296d31216" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-  </div>
-<!--End mc_embed_signup-->
 </div>
 
 <!-- Script to Activate the Carousel -->
