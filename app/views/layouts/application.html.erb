@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= @store.name %></title>
     <%= csrf_meta_tags %>
+    <%= display_meta_tags site: 'American Furnishings Stockton' %>
     <%= favicon_link_tag(source='favicon.ico') %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -17,7 +17,7 @@
   <body>
     <div class="page">
       <div class="logo">
-        <div class="brand"><%= link_to @store.name, '/' %></div>
+        <div class="brand"><%=link_to @store.name, '/' %></div>
         <!-- <%= image_tag('logo.jpg', class: "img-responsive", id: "logo") %> -->
         <div class="address-bar" id="address"><%= @store.address %> | <%= @store.phone %></div>
         <!-- Navigation -->

@@ -6,7 +6,11 @@
           <% if Product.all.length > 1 %>
             <%= link_to(product_path(Product.find(@product.get_prev))) do %><span class="glyphicon glyphicon-chevron-left"></span><% end %>
           <% end %>
-          <p style="display: inline;"><%= @product.category %></p>
+          <% unless @category == "seating" %>
+            <p style="display: inline;"><%= title (@product.category + " furniture").titlecase %></p>
+          <% else %>
+            <p style="display: inline;"><%= title ("Living Room furniture").titlecase %></p>
+          <% end %>
           <% if Product.all.length > 1 %>
             <%= link_to(product_path(Product.find(@product.get_next))) do %><span class="glyphicon glyphicon-chevron-right"></span><% end %>
           <% end %>
