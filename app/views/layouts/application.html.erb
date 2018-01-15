@@ -36,12 +36,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><%= link_to 'Dining', '/dining' %></li>
-                <li><%= link_to 'Living Room', '/seating' %></li>
-                <li><%= link_to 'Bedroom', '/bedroom' %></li>
+                <li><a href="/">Home</a><span class="nav-line"> | </span></li>
+                <li><%= link_to 'Dining', '/dining' %><span class="nav-line"> | </span></li>
+                <li><%= link_to 'Living Room', '/seating' %><span class="nav-line"> | </span></li>
+                <li><%= link_to 'Bedroom', '/bedroom' %><span class="nav-line"> | </span></li>
                 <!-- <li><%= link_to 'Youth', '/youth' %></li> -->
-                <li><%= link_to 'Mattresses', mattresses_path %></li>
+                <li><%= link_to 'Mattresses', mattresses_path %><span class="nav-line"> | </span></li>
                 <li><%= link_to 'Contact', '/contact' %></li>
               </ul>
             </div>
@@ -52,12 +52,12 @@
 
       <%= yield %>
 
-      <footer>
-        <p><%= @store.name %> &copy; <%= Date.today.year %></p>
-        <!-- <ul class="footer-links">
-          <li><%= link_to "Brands", brands_path %></li>
-        </ul> -->
-      </footer>
     </div>
+    <footer>
+      <p><%= @store.name %> &copy; <%= Date.today.year %></p>
+      <!-- <ul class="footer-links">
+      <li><%= link_to "Brands", brands_path %></li>
+    </ul> -->
+  </footer>
   </body>
 </html>

@@ -6,7 +6,8 @@ body {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   height: 100%;
   min-height: 100vh;
-  background: url('https://s3-us-west-1.amazonaws.com/matteichsteadt/bg+(1).jpg') no-repeat center center fixed;
+  // background: url('https://mfiles.alphacoders.com/579/579035.jpg') no-repeat center center fixed;
+  background-color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -30,8 +31,8 @@ body {
  .box {
      margin-bottom: 20px;
      padding: 30px 15px;
-     background: #fff;
-     background: rgba(255,255,255, 0.8);
+    //  background: #fff;
+    //  background: rgba(255,255,255, 0.8);
  }
 
  @media screen and (min-width:768px) {
@@ -40,12 +41,12 @@ body {
      margin: 0;
      padding: 30px 0 10px;
      text-align: center;
-     text-shadow: 8px 8px 5px rgba(0,0,0,0.5);
+     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
      font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
      font-size: 5em;
      font-weight: 700;
      line-height: normal;
-     color: #fff;
+     color: darkred;
   }
 
   .address-bar {
@@ -58,10 +59,11 @@ body {
      font-size: 1.25em;
      font-weight: 400;
      letter-spacing: 3px;
-     color: #fff;
+     color: darkblue;
   }
 
   .navbar-nav > li > a {
-    padding: 35px 0;
+    padding: 15px 0;
+    color: #333 !important;
   }
 }

@@ -273,3 +273,14 @@ footer {
   margin: 0 auto;
   max-width: 500px;
 }
+
+.nav-line {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

@@ -7,56 +7,54 @@
           <strong><%= @store.name %></strong>
         </h2>
         <hr>
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <% if @store.facebook? %>
-          <a href="<%= @store.facebook %>" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
-          <% end %>
-          <% if @store.instagram? %>
-          <a href="<%= @store.instagram %>" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
-          <% end %>
-          <% if @store.twitter? %>
-          <a href="<%= @store.twitter %>" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
-          <% end %>
-          <% if @store.pinterest? %>
-          <a href="<%= @store.pinterest %>" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a>
-          <% end %>
-        </div>
       </div>
-      <% @stores.each do |store| %>
-      <div class="col-lg-<%= 12/@stores.length %>">
-        <table style="margin: 0 auto;">
+      <div class="col-md-6 text-center">
+        <table class="table table-responsive" style="margin: 0 auto;">
           <tr>
             <td><p>Phone:</p></td>
-            <td><p><strong><%= store.phone %></strong></p></td>
+            <td><p><strong><%= @store.phone %></strong></p></td>
           </tr>
           <tr>
             <td><p>Email:</p></td>
-            <td><p><strong><a href="<%= store.email %>"><%= store.email %></a></strong></p></td>
+            <td><p><strong><a href="<%= @store.email %>"><%= @store.email %></a></strong></p></td>
           </tr>
           <tr>
             <td><p>Address:</p></td>
-            <td><p><strong><%= store.address%></strong></p></td>
+            <td><p><strong><%= @store.address%></strong></p></td>
           </tr>
           <tr>
             <td style="vertical-align: top"><p>Hours:</p></td>
             <td>
-              <% store.show_hours.each do |hour| %>
+              <% @store.show_hours.each do |hour| %>
                 <p><strong><%= hour %></strong></p>
               <% end %>
             </td>
           </tr>
           <tr>
         </table>
+        <% if @store.facebook? %>
+        <a href="<%= @store.facebook %>" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+        <% end %>
+        <% if @store.instagram? %>
+        <a href="<%= @store.instagram %>" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+        <% end %>
+        <% if @store.twitter? %>
+        <a href="<%= @store.twitter %>" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+        <% end %>
+        <% if @store.pinterest? %>
+        <a href="<%= @store.pinterest %>" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a>
+        <% end %>
+      </div>
+      <div class="col-md-6">
         <div class="clearfix"></div>
         <br>
         <div class="col-md-12">
             <div id="map">
-              <iframe src="<%= store.gmaps %>" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="<%= @store.gmaps %>" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
         <div class="clearfix"></div>
       </div>
-      <% end %>
     </div>
   </div>
 </div>

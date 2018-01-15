@@ -21,7 +21,7 @@ $color1: rgba(255,255,255,1);
 $teal: #13ACB1;
 $purple: #543c5d;
 // $teal: darken(red, 10%);
-$carouselHeight: 500px;
+$carouselHeight: auto;
 
  html {
    min-height: 100vh;
@@ -152,6 +152,8 @@ $carouselHeight: 500px;
      left: 50%;
      top: 50%;
      transform: translate(-50%, -50%);
+     width: 100%;
+     text-align: center;
  }
 
  .alsoView .col-sm-3 {
@@ -218,9 +220,9 @@ $carouselHeight: 500px;
      }
 
      .navbar-default {
-         border: none;
-         background: rgba(255,255,255, 0.9);
-         //  background: #fff;
+         border: 1px solid #777;
+        //  background: rgba(255,255,255, 0.9);
+        background: #fff;
          margin-bottom: 0 !important;
      }
 
@@ -237,7 +239,7 @@ $carouselHeight: 500px;
      }
 
      .nav>li>a {
-        font-size: 16px;
+        font-size: 15px;
         padding: 20px 0px;
      }
 
@@ -782,4 +784,9 @@ th {
   width: 150%;
   background-color: #ddd;
   margin-left: -25%;
+  @media (max-width: 768px) {
+    & input.email, & .button{
+      width: 70% !important;
+    }
+  }
 }
